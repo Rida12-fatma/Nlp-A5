@@ -14,7 +14,7 @@ def load_and_preprocess_dataset():
         df = df.rename(columns={"history": "prompt", "human_ref_A": "response_1", "human_ref_B": "response_2"})
         df = df[["prompt", "response_1", "response_2", "preferred_response"]]
         return df
-
+    
     df = preprocess_dataset(dataset)
     return df
 
