@@ -14,10 +14,10 @@ def generate_response(prompt, tokenizer, model):
         outputs = model.generate(
             **inputs, 
             max_length=200, 
-            temperature=0.1, 
+            temperature=0.7, 
             top_k=50, 
             top_p=0.9, 
-            repetition_penalty=0
+            repetition_penalty= 1.2
         )
     response = tokenizer.decode(outputs[0], skip_special_tokens=True)
     return response
