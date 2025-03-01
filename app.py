@@ -13,7 +13,7 @@ def generate_response(prompt, tokenizer, model):
     with torch.no_grad():
         outputs = model.generate(
             **inputs, 
-            max_length=50, 
+            max_length=200, 
             temperature=0.7, 
             top_k=50, 
             top_p=0.9, 
