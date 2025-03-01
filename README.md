@@ -5,7 +5,7 @@ This repository contains my fine-tuned model, which has been trained using Direc
 
 ## 🔗 Model Link
 You can access and use the model here:  
-[**My Trained Model on Hugging Face**](https://huggingface.co/your-hf-username/my-trained-model)
+[**My Trained Model on Hugging Face**](https://huggingface.co/R1243/my-trained-model/tree/main)
 
 ## 📂 Files Included
 - `pytorch_model.bin` - The trained model weights.
