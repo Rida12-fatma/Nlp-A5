@@ -11,7 +11,14 @@ def load_model():
 def generate_response(prompt, tokenizer, model):
     inputs = tokenizer(prompt, return_tensors="pt")
     with torch.no_grad():
-        outputs = model.generate(**inputs, max_length=100)
+        outputs = model.generate(
+            **inputs, 
+            max_length=50, 
+            temperature=0.7, 
+            top_k=50, 
+            top_p=0.9, 
+            repetition_penalty=1.2
+        )
     response = tokenizer.decode(outputs[0], skip_special_tokens=True)
     return response
 
