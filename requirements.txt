@@ -1,6 +1,7 @@
-streamlit
-transformers
 torch
-huggingface_hub
-datasets
+transformers
 trl
+datasets
+pandas
+numpy
+scipy
