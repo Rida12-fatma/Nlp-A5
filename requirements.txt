@@ -1,8 +1,5 @@
-torch
+streamlit
 transformers
-trl
+torch
 datasets
-pandas
-numpy
-scipy
 huggingface
